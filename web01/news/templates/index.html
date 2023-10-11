@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            background-color: #333;
+            color: #fff;
+            
+            padding: 20px;
+            margin: 0 auto;
+        }
+        h3 {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 50px 100px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: #555;
+        }
+
+        p {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 50px 100px;
+            padding: 10px;
+            border-radius: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        ECP News
+    </h2>
+    <br>
+    {% for x in x %}
+        <h3>{{x.title}}</h3>
+        <p>{{x.newscontent}}</p>
+    {% endfor %}
+</body>
+</html>
